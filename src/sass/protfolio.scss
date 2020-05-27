@@ -1,0 +1,123 @@
+#protfolio{
+    margin-bottom: 80px;
+    overflow: hidden;
+    @include media-breakpoint-down(md){
+        margin-bottom: 40px;
+    }
+    .item-list{
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        li{
+            display: inline-block;
+            margin: 0 20px 10px 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+            a{
+                font-size: 14px;
+                line-height: 1.5em;
+                color: #777777;
+                font-weight: 500;
+                text-decoration: none;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: $theme-color;
+                    transition: all 0.3s ease 0s;
+                }   
+            }
+            .active{
+                color: $theme-color !important;
+            }
+        }
+    }
+     #filter-content{
+        .single-filter-content{
+            &:hover{
+                .overlay-bg-content {
+                    opacity: 1;
+                }
+            }
+            .overlay-bg-content {
+                background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+                background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+                background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+                text-align: center;
+                padding: 50px 100px;
+                opacity: 0;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+            }
+            .overlay {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            p{
+                margin: 0;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.5em;
+            }
+            .line {
+                margin: 10px 0 15px 0;
+                width: 100%;
+                height: 1px;
+                background: $theme-color;
+            }
+            h5{
+                line-height: 1.5em;
+                margin-bottom: 0;
+                margin-top: 0;
+                font-weight: 600;
+                font-size: 16px;
+            }
+        } 
+        .single-filter-content.content-1 {
+            background: url(../images/c1.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+        .single-filter-content.content-2 {
+            background: url(../images/c2.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+        .single-filter-content.content-3 {
+            background: url(../images/c3.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+        .single-filter-content.content-4 {
+            background: url(../images/c4.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+        .single-filter-content.content-5 {
+            background: url(../images/c5.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+        .single-filter-content.content-7 {
+            background: url(../images/c7.jpg) no-repeat center center/cover;
+            padding-right: 0;
+            padding-left: 0;
+            height: 350px;
+            position: relative;
+        }
+    }      
+}
